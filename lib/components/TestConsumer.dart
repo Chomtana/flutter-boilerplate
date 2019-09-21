@@ -13,7 +13,9 @@ class TestConsumer extends StatelessWidget {
               Text(records.test),
               RaisedButton(
                 onPressed: () {
-                  Provider.of<RecordsState>(context, listen: false).setTest("hello fuck");
+                  print("pressed "+records.test);
+                  records.settTest("hello mue r ai mueng ja tum took");
+                  print("after "+records.test);
                 },
                 child: Text("Set to hello world"),
               )

@@ -1,10 +1,6 @@
 import 'package:flutter/cupertino.dart';
-import 'package:plannee_flutter/connector/ConnectedStateBase.dart';
-import 'package:plannee_flutter/connector/ConnectedStateRoot.dart';
 
 class RecordsState extends ChangeNotifier {
-  String get tableName => "records";
-  
   String test = "Dsadsadsaddas";
   
   Widget buildTest(BuildContext context) {
@@ -13,9 +9,9 @@ class RecordsState extends ChangeNotifier {
     );
   }
   
-  setTest(msg) {
-    test = msg;
+  settTest(msg) {
     print("Setted "+msg);
+    test = msg;
     notifyListeners();
   }
 }
